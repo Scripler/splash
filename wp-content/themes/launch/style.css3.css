@@ -1,0 +1,31 @@
+/********************************************************************************************* 
+
+CSS3 Elements Seperated to Maintain Validation
+
+*********************************************************************************************/
+input.email {
+-moz-border-radius: 1px;
+-webkit-border-radius: 1px;
+-moz-box-shadow: 0 0 5px 5px #818285;
+-webkit-box-shadow: 0 0 5px 5px #818285;
+box-shadow: 0 0 2px 2px #818285;
+}
+
+.btn {
+-moz-border-radius: 1px;
+-webkit-border-radius: 1px;
+-moz-box-shadow: 0 0 5px 5px #818285;
+-webkit-box-shadow: 0 0 5px 5px #818285;
+box-shadow: 0 0 2px 2px #818285;
+}
+
+.btn:hover {
+background: #fff56c;
+}
+
+h1, h2, a:link, a:visited {
+
+
+#logo img:hover, a:hover {
+
+}

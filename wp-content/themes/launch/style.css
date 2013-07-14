@@ -1,0 +1,340 @@
+/*********************************************************************************************
+
+Theme Name: Launch
+Theme URI: http://www.press75.com/
+Description: Designed by Jason Schuller
+Version: 1.0
+Author: Press75.com
+Author URI: http://www.press75.com/
+
+**********************************************************************************************
+
+Designed and Built by Jason Schuller - theSevenFive.com
+
+CSS, XHTML and Design Files are all Copyright 2007-2010 Circa75 Media, LLC
+
+Be inspired, but please don't steal :)
+
+**********************************************************************************************
+
+0.  CSS Reset  -------------------------  All Theme Files
+1.  Basic Setup  -----------------------  All Theme Files
+2.  Header Styles  ---------------------  header.php
+3.  Main Content Styles ----------------  index.php
+4.  Footer Styles  ---------------------  footer.php
+
+**********************************************************************************************/
+
+
+/********************************************************************************************* 
+
+0.  CSS Reset  -------------------------  All Theme Files
+
+*********************************************************************************************/
+html {height: 95%;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+margin: 0;
+padding: 0;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+fieldset, img {border: 0;}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+font-style: normal;
+font-weight: normal;
+}
+
+ol, ul {list-style: none;}
+caption, th {text-align: left;}
+
+h1, h2, h3, h4, h5, h6 {
+font-size: 100%;
+font-weight: normal;
+}
+
+q:before, q:after {content: '';}
+abbr, acronym {border: 0;}
+
+
+/*********************************************************************************************
+
+1.  Basic Setup  -----------------------  All Theme Files
+
+*********************************************************************************************/
+body {
+height:100%;
+	background:grey;
+	border-style:0px;
+
+	/* IE10 Consumer Preview */ 
+background-image: -ms-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #808080 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #808080 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #808080 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #FFFFFF), color-stop(1, #808080));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #808080 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: radial-gradient(circle farthest-corner at center, #FFFFFF 0%, #808080 100%);
+
+	padding: 0px 0px 0px 0px;
+	}
+width: auto;
+height: auto;
+font-family: 'Roboto', sans-serif;
+font-size: 12px;
+line-height: 18px;
+color: #4F4E4D;
+}
+#content {
+width: 100%;
+margin: 0;
+height: auto;
+}
+
+a:link, a:visited {
+color: #363534;
+text-decoration: none;
+font-weight: bold;
+}
+
+h1 { 
+font-family: 'Roboto', sans-serif;
+font-size: 60px;
+font-weight: bold;
+}
+
+h2 {
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: bold;
+margin: 0 0 5px 0;
+}
+
+blockquote {
+border-left: 1px solid #999999;
+padding: 0 0 0 15px;
+font-style: italic;
+font-weight: bold;
+}
+
+strong {font-weight: bold;}
+
+abbr,acronym {
+border-bottom: 1px dotted;
+cursor: help;
+} 
+
+em {font-style: italic;}
+ol,ul {margin: 0;}
+ol li {list-style: decimal outside;}
+ul li {list-style: none;}
+
+caption {
+margin-bottom: 8px;
+text-align: center;
+}
+
+p,fieldset,table {margin-bottom: 15px;font-family: 'Roboto', sans-serif;}
+a:link, a:visited {text-decoration: none;}
+
+:focus {
+outline: 0;
+}
+
+
+/*********************************************************************************************
+
+2.  Header Styles  ---------------------  header.php
+
+*********************************************************************************************/
+.lang {float: right;}
+.lang ul {margin: 10px 15px; 0 0;}
+.lang ul li {float: left; margin: 0 0 0 10px;font-family: 'Roboto', sans-serif;font-size: 14px;}
+.lang ul li a {color: #fff56c;font-weight: normal;}
+.lang ul li a:hover {text-decoration: underline;}
+#header {
+width: 100%;
+clear: both;
+float: left;
+}
+.wrapper-parent {position: relative;}
+.wrapper-child {position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65%;
+    width: 50%;
+    margin: 10% 0 0 -25%;}
+#logo {width: 500px;margin: 0 auto 0 auto;}
+#logo img.logo {display:block; margin: 0 auto 0 auto; width: 155px;}
+
+
+/*********************************************************************************************
+
+3.  Main Content Styles ----------------  index.php
+
+*********************************************************************************************/
+#description {clear: both; float: left; width: 100%;}
+#description .english-text, #description .danish-text {width: 500px; margin: 0 auto 0 auto;}
+#description .english-text h2, #description .danish-text h2 {text-align: center;color: #110c0d;font-weight: bold !important;font-size: 26px;padding: 85px 0px 40px 0px;}
+#description .english-text p, #description .danish-text p {text-align: center;color: #111111;font-size: 16px;padding: 0px 0px 0px 0px;line-height: 20px;}
+#description .danish-text {display: none;}
+body.danish #description .danish-text {display: block !important;}
+body.danish #description .english-text {display: none;}
+#description .signup-text-english, .signup-text-danish {width: 500px; margin: 0 auto 0 auto; padding: 0px 0 0 0;}
+#description .signup-text-english p, .signup-text-danish p {text-align: center;color: #111111;font-size: 16px;padding: 0px 0px 0px 0px;line-height: 20px;font-style: italic;}
+p.special-message {color: #565656 !important; padding: 30px 0 20px 0 !important; font-size: 22px !important;line-height: 30px !important; font-style: normal !important;}
+p.special-message a {color: #565656 !important;}
+p.special-message a:hover {color: #737373 !important;text-decoration: underline;}
+#description .signup-text-danish {display: none;}
+body.danish #description .signup-text-danish {display: block !important;}
+body.danish #description .signup-text-english {display: none;}
+#register {
+width: 100%;
+clear: both;
+float: left;
+margin: 5px 0 50px 0;
+}
+#signup {width: 480px; margin: 0 auto 0 auto;} 
+input.email {
+border: none;
+background: #f6f6f6;
+font-size: 20px;
+font-weight: bold;
+width: 300px;
+height: 33px;
+float: left;
+padding: 0 0 0 15px;
+margin: 0 0 12px 0px;
+color: #818285;
+font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+background: #fff265;
+color: #231f20;
+font-size: 20px;
+border: none;
+width: 135px;
+height: 33px;
+float: right;
+cursor: pointer;
+margin: 0px 0 0 0px;
+text-align: center;
+font-weight: bold;
+font-family: 'Roboto', sans-serif;
+}
+
+#response {
+position: absolute;
+width: 500px;
+margin: 60px 0 0 0;
+color: #4F8A10;
+font-family: 'Roboto', sans-serif;
+text-align: center;
+}
+.errorMessage {color: #D8000C !important;}
+.mc-field-group {
+position: absolute;
+}
+
+#twitter {
+width: 550px;
+float: left;
+margin: 45px 0 50px 0;
+display: none;
+}
+
+a.twitter {
+font-family: 'Roboto', sans-serif;
+background: url(images/twitter.png) left no-repeat;
+padding: 0 0 0 30px;
+font-weight: normal;
+font-size: 18px;
+}
+
+
+/*********************************************************************************************
+
+4.  Footer Styles  ---------------------  footer.php
+
+*********************************************************************************************/
+#footer {
+width: 500px;
+float: left;
+padding: 10px 0 40px 0;
+display: none;
+}
+
+#footer-content {
+width: 500px;
+float: left;
+}
+
+#footer h3 {
+color: #FFFFFF;
+font-weight: bold;
+}
+
+
+/*********************************************************************************************
+
+5.  Responsive Styles  ---------------------  All files
+
+*********************************************************************************************/
+/* iPhone 3 + 4 */
+@media only screen 
+and (min-width : 300px) 
+and (max-width : 480px) {
+    body {overflow-x: hidden;}
+    .wrapper-parent {position: relative;}
+.wrapper-child {position: absolute;
+    top: 50%;
+    left: 10%;
+    height: 65%;
+    width: 50%;
+    margin: 10% 0 0 -25%;}
+#logo {width: 260%;margin: 0 auto 0 auto;}
+#logo img.logo {display:block; margin: 20px auto 0 auto; width: 155px;}
+#description .english-text, #description .danish-text {width: 180%; position: relative; left: 40%;}
+    #description .english-text h2, #description .danish-text h2 {text-align: center;color: #110c0d;font-weight: normal;font-size: 18px;padding: 65px 5px 40px 5px;}
+    #description .signup-text-english p, .signup-text-danish p {text-align: center;color: #111111;font-size: 12px;padding: 40px 20px 0px 5px;line-height: 20px;}
+}
+
+/* iPhone 5 */
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 570px) {
+    body {overflow-x: hidden;}
+    .wrapper-parent {position: relative;}
+.wrapper-child {position: absolute;
+    top: 50%;
+    left: 10%;
+    height: 65%;
+    width: 50%;
+    margin: 10% 0 0 -25%;}
+#logo {width: 260%;margin: 0 auto 0 auto;}
+#logo img.logo {display:block; margin: 20px auto 0 auto; width: 155px;}
+#description .english-text, #description .danish-text {width: 180%; position: relative; left: 40%;}
+    #description .english-text h2, #description .danish-text h2 {text-align: center;color: #110c0d;font-weight: normal;font-size: 18px;padding: 65px 0px 40px 0px;}
+    #description .signup-text-english p, .signup-text-danish p {text-align: center;color: #111111;font-size: 12px;padding: 40px 20px 0px 5px;line-height: 20px;}
+}
+/* iPad */
+@media only screen 
+and (min-width : 1024px) 
+and (max-width : 1600px) {
+	
+	
+}
