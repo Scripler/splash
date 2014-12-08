@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Scripler</title>
+
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" type="text/css" href="css/shared/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/shared/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/pages/frontpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/modules/navigation.css" />
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk6FHf_Xec1ykYuZoWjcicCwP-heTCL-w&sensor=true"></script>
+</head>
+<body>
+
+	<nav class="menu-top">
+		<ul>
+			<!-- //ADD/FIX: Make a fallback if you haven't got Javascript -->
+			<li class="navpoint menu-create" data="scripler"><a href="#scripler">Scripler</a></li>
+			<!-- //FIX: If logged in go-to create page, else show create menupoint -->
+			<!--<li class="navpoint menu-create" data="create"><a href="#create">Create</a></li>-->
+			<!-- //FIX: If logged in go-to explore page, else show explore menupoint -->
+			<!--<li class="navpoint menu-create" data="explore">Explore</li>-->
+			<li class="navpoint menu-features" data="features"><a href="#features">Features</li>
+			<!--<li class="navpoint menu-pricing" data="pricing">Pricing</li>-->
+			<!--<li class="navpoint menu-learn" data="learn">Learn</li>-->
+			<li class="navpoint menu-about" data="about"><a href="#about">About</li>
+			<li class="navpoint menu-contact" data="contact"><a href="#contact">Contact</a></li>
+			<!--<li class="navpoint menu-login" data="login"><a href="#login">Login</a></li>-->
+			<li class="navpoint menu-blog" data="blog"><a href="http://blog.scripler.com/" class="blog-link">Blog</a></li>
+			<!--<li class="navbutton" id="showMenu"></li>-->
+		</ul>
+	</nav>
+
+	<section id="scripler" class="clearfix">
+		<article>
+				<div class="create_logo"><img src="images/logo.png" /></div>
+
+				<h2 class="create_subtitle">
+					Make great ebooks
+				</h2>
+				<div class="create_subtext">
+					Everyone can write and produce ebooks with Scripler.<br />
+					Your books will be beautiful, fully functional and ready for distribution.<br />
+				        And it’s free.	
+				</div>
+				<h2 style="text-align:center;">Test our alpha!</h2>
+				<div class="create_subtext">We are currently testing our alpha version of Scripler.<br />
+				Sign up for our newsletter and we’ll send you an invitation<br/> 
+				as soon as we have room for new testers.</div>
+				<!-- MailChimp -->
+				<div class="create_form" id="mc_embed_signup">
+				<form action="http://scripler.us6.list-manage.com/subscribe/post?u=1b5826d9bbcb3775e3f837180&amp;id=74f540769b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+				<div class="mc-field-group">
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</div>
+				<div id="mce-responses" class="clear">
+					<div class="response error" id="mce-error-response" style="display:none;"></div>
+					<div class="response success" id="mce-success-response" style="display:none;"></div>
+				</div>
+				</form>
+				</div>
+				<script type="text/javascript">
+					var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';
+					try {
+						var jqueryLoaded=jQuery;
+						jqueryLoaded=true;
+					} catch(err) {
+						var jqueryLoaded=false;
+					}
+					var head= document.getElementsByTagName('head')[0];
+					if (!jqueryLoaded) {
+						var script = document.createElement('script');
+						script.type = 'text/javascript';
+						script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+						head.appendChild(script);
+						if (script.readyState && script.onload!==null){
+							script.onreadystatechange= function () {
+								if (this.readyState == 'complete') mce_preload_check();
+							}
+						}
+					}
+
+					var err_style = '';
+					try{
+						err_style = mc_custom_error_style;
+					} catch(e){
+						err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+					}
+					var head= document.getElementsByTagName('head')[0];
+					var style= document.createElement('style');
+					style.type= 'text/css';
+					if (style.styleSheet) {
+						style.styleSheet.cssText = err_style;
+					} else {
+						style.appendChild(document.createTextNode(err_style));
+					}
+					head.appendChild(style);
+					setTimeout('mce_preload_check();', 250);
+
+					var mce_preload_checks = 0;
+					function mce_preload_check(){
+						if (mce_preload_checks>40) return;
+						mce_preload_checks++;
+						try {
+							var jqueryLoaded=jQuery;
+						} catch(err) {
+							setTimeout('mce_preload_check();', 250);
+							return;
+						}
+						var script = document.createElement('script');
+						script.type = 'text/javascript';
+						script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+						head.appendChild(script);
+						try {
+							var validatorLoaded=jQuery("#fake-form").validate({});
+						} catch(err) {
+							setTimeout('mce_preload_check();', 250);
+							return;
+						}
+						mce_init_form();
+					}
+					function mce_init_form(){
+						jQuery(document).ready( function($) {
+							var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+							var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+							$("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+							options = { url: 'http://scripler.us6.list-manage.com/subscribe/post-json?u=1b5826d9bbcb3775e3f837180&id=74f540769b&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+										beforeSubmit: function(){
+											$('#mce_tmp_error_msg').remove();
+											$('.datefield','#mc_embed_signup').each(
+												function(){
+													var txt = 'filled';
+													var fields = new Array();
+													var i = 0;
+													$(':text', this).each(
+														function(){
+															fields[i] = this;
+															i++;
+														});
+													$(':hidden', this).each(
+														function(){
+															var bday = false;
+															if (fields.length == 2){
+																bday = true;
+																fields[2] = {'value':1970};//trick birthdays into having years
+															}
+															if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+																this.value = '';
+															} else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+																this.value = '';
+															} else {
+																if (/\[day\]/.test(fields[0].name)){
+																	this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;
+																} else {
+																	this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+																}
+															}
+														});
+												});
+											$('.phonefield-us','#mc_embed_signup').each(
+												function(){
+													var fields = new Array();
+													var i = 0;
+													$(':text', this).each(
+														function(){
+															fields[i] = this;
+															i++;
+														});
+													$(':hidden', this).each(
+														function(){
+															if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
+																this.value = '';
+															} else {
+																this.value = 'filled';
+															}
+														});
+												});
+											return mce_validator.form();
+										},
+										success: mce_success_cb
+									};
+						  $('#mc-embedded-subscribe-form').ajaxForm(options);
+						});
+					}
+					function mce_success_cb(resp){
+						$('#mce-success-response').hide();
+						$('#mce-error-response').hide();
+						if (resp.result=="success"){
+							//$('#mce-'+resp.result+'-response').show();
+							$('#mce-'+resp.result+'-response').html(resp.msg).show();
+							$('#mc-embedded-subscribe-form').each(function(){
+								this.reset();
+							});
+						} else {
+							var index = -1;
+							var msg;
+							try {
+								var parts = resp.msg.split(' - ',2);
+								if (parts[1]==undefined){
+									msg = resp.msg;
+								} else {
+									i = parseInt(parts[0]);
+									if (i.toString() == parts[0]){
+										index = parts[0];
+										msg = parts[1];
+									} else {
+										index = -1;
+										msg = resp.msg;
+									}
+								}
+							} catch(e){
+								index = -1;
+								msg = resp.msg;
+							}
+							try{
+								if (index== -1){
+									//$('#mce-'+resp.result+'-response').show();
+									$('#mce-'+resp.result+'-response').html(msg).show();
+								} else {
+									err_id = 'mce_tmp_error_msg';
+									html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+
+									var input_id = '#mc_embed_signup';
+									var f = $(input_id);
+									if (ftypes[index]=='address'){
+										input_id = '#mce-'+fnames[index]+'-addr1';
+										f = $(input_id).parent().parent().get(0);
+									} else if (ftypes[index]=='date'){
+										input_id = '#mce-'+fnames[index]+'-month';
+										f = $(input_id).parent().parent().get(0);
+									} else {
+										input_id = '#mce-'+fnames[index];
+										f = $().parent(input_id).get(0);
+									}
+									if (f){
+										$(f).append(html);
+										$(input_id).focus();
+									} else {
+										$('#mce-'+resp.result+'-response').show();
+										$('#mce-'+resp.result+'-response').html(msg);
+									}
+								}
+							} catch(e){
+								//$('#mce-'+resp.result+'-response').show();
+								$('#mce-'+resp.result+'-response').html(msg).show();
+							}
+						}
+					}
+				</script>
+				<!-- MailChimp -->
+
+				<div class="socialicons clearfix">
+					<div class="socialicon"><a href="https://www.facebook.com/Scripler" target="_blank"><span class="icon-facebook"></span></a></div>
+					<div class="socialicon"><a href="https://twitter.com/Scriplerdk" target="_blank"><span class="icon-twitter"></span></a></div>
+					<div class="socialicon"><a href="https://plus.google.com/110745200191180687790/" target="_blank"><span class="icon-google-plus"></span></a></div>
+				</div>
+			</article>
+		</section>
+
+	<section id="features" class="clearfix">
+		<article class="overflow">
+			<h1>Features</h1>
+
+			<div class="row">
+				<div class="hexagon-icon">
+					<img src="images/features/free.png" width="140" height="140" />
+				</div>
+				<div class="hexagon-info">
+					<div class="hexagon-title">It’s free</div>
+					<div class="hexagon-text">With Scripler it‘s free to make ebooks. As in - it does not cost a thing. There are premium plans if you need more cloud storage, premium designs or if you want to make custom book-templates.</div>
+				</div>
+				<div class="hexagon-icon right">
+					<img src="images/features/many.png" width="140" height="140" />
+				</div>
+				<div class="hexagon-info right">
+					<div class="hexagon-title">Make as many books you like</div>
+					<div class="hexagon-text">No limit on the number of books you can make. Make 1000 books consisting only of a poem each. Make serial fiction and publish each chapter as an ebook or collect your creations in vast works of literature. Just experiment, go wild.</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="hexagon-icon">
+					<img src="images/features/ebook.png" width="140" height="140" />
+				</div>
+				<div class="hexagon-info">
+					<div class="hexagon-title">Fully functional ebooks</div>
+					<div class="hexagon-text">Scripler makes ebooks in EPUB format, the definitive international and open standard for ebooks. Easily insert frontmatter, backmatter and metadata. All elements are designed for the book-template you currently use.</div>
+				</div>
+				<div class="hexagon-icon right">
+					<img src="images/features/togd.png" width="140" height="140" />
+				</div>
+				<div class="hexagon-info right">
+					<div class="hexagon-title">Great typography and design</div>
+					<div class="hexagon-text">Make professionally designed typography with Scripler’s book-templates. You’ll have a wide selection of great fonts and full control of the typography. Easily insert images and figures.</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="hexagon-icon">
+					<img src="images/features/import.png" width="140" height="140" />
+				</div>
+				<div class="hexagon-info">
+					<div class="hexagon-title">Import</div>
+					<div class="hexagon-text">Import your manuscript from Word. Just upload it and Scripler will convert it to a well-formatted book project, ready for polishing and final book production.</div>
+				</div>
+				<div class="hexagon-icon right">
+					<img src="images/features/premium.png" width="140" height="140" />
+				</div>
+				<div class="hexagon-info right">
+					<div class="hexagon-title">Premium subscription for heavy users and professionals</div>
+					<div class="hexagon-text">As a premium subscriber you’ll have a wider range of professionally designed book-templates to choose from, more space for more books, as well as the ability to easily create and control your own custom book-templates.</div>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<!--<section id="pricing" data-speed="100" data-type="background">
+		<article>
+		</article>
+	</section>-->
+
+	<!--<section id="learn" data-speed="100" data-type="background">
+		<article>
+		</article>
+	</section>-->
+
+	<section id="about" class="clearfix">
+		<article>
+			<div class="inner">
+				<h1>About</h1>
+				<div class="about-text">
+					Scripler will make the ebook revolution accessible to anyone who has something to say.
+				</div>
+
+				<h2>The Scripler Team</h2>
+				<div class="half">
+					<span>
+						<a href="mailto:david@scripler.com" class="email-text">David Walther Birk</a>, Project Lead<br />
+						Is actually an archaeologist!
+					</span>
+
+					<span class="reduced-padding">
+						<a href="mailto:morten@scripler.com" class="email-text">Morten Garbøl Franck</a>, Developer<br />
+						Is addicted to:<br />
+						<ul><li>Lists</li></ul>
+					</span>
+
+					<span>
+						<a href="mailto:sofie@scripler.com" class="email-text">Sofie Marie Ottsen</a>, Communications<br />
+						Plays the saxophone (really poorly).
+					</span>
+
+					<span>
+						<a href="mailto:ole@scripler.com" class="email-text">Ole Sandbæk Jørgensen</a>, Developer<br />
+						Fanatic movie watcher. As long as I got my specs on, aye.
+					</span>
+				</div>
+				<div class="half">
+					<span>
+						<a href="mailto:kaspar@scripler.com" class="email-text">Kaspar Sivertsen</a>, Graphic designer<br />
+						Has no special characteristics whatsoever.
+					</span>
+
+					<span>
+						<a href="mailto:allan@scripler.com" class="email-text">Allan Mørk Christensen</a>, Developer<br />
+						Solves the Rubik’s Cube (very slowly).
+					</span>
+
+					<span>
+						<a href="mailto:kasper@scripler.com" class="email-text">Kasper Møller</a>, Communications<br />
+						Co-writes a blog about otters.
+					</span>
+
+					<span>
+						<a href="mailto:roxana@scripler.com" class="email-text">Roxana Dobre</a>, Developer<br />
+					        Is addicted to cinnamon and collects lamb-toys.	
+					</span>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<section id="contact" class="clearfix">
+		<div id="map-canvas"></div>
+			<article>
+				<h1>Contact</h1>
+				<h2>Ask us anything (about Scripler)</h2>
+				<div>David Walther Birk<br />Project leader<br /><a href="mailto:david@scripler.com">david@scripler.com</a></div>
+
+				<h2>Find us</h2>
+				<div>Scripler<br />Laplandsgade 4, 1st floor<br />2300 København S<br />Denmark</div>
+
+				<h2>Press and media</h2>
+				<div class="clearfix">
+					<div class="half">Kasper Møller<br /><a href="mailto:kasper@scripler.com">kasper@scripler.com</a></div>
+					<div class="half">Sofie Marie Ottsen<br /><a href="mailto:sofie@scripler.com">sofie@scripler.com</a></div>
+				</div>
+
+				<h2>Stay informed</h2>
+				<div>Sign up for the newsletter and get a chance to test our alpha. The newsletter will give you a gourmet selection of interesting news from the frontiers of digital publishing and updates on what we’re currently working on at Scripler.<br /><br />
+				<a href="#" class="to-top">Go to Signup</a>
+				</div>
+			</article>
+	</section>
+
+	<!-- JS Code -->
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<![endif]-->
+	<!--[if gte IE 9]><!---->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<!--<![endif]-->
+
+	<script src="js/frontpage.jquery.js"></script>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-41784294-1', 'scripler.com');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>
